@@ -1,0 +1,7 @@
+E:\C#\Practice\C# Essential\1. Classes\Task 2\Rectangle\Rectangle\bin\Debug\Rectangle.exe.config
+E:\C#\Practice\C# Essential\1. Classes\Task 2\Rectangle\Rectangle\bin\Debug\Rectangle.exe
+E:\C#\Practice\C# Essential\1. Classes\Task 2\Rectangle\Rectangle\bin\Debug\Rectangle.pdb
+E:\C#\Practice\C# Essential\1. Classes\Task 2\Rectangle\Rectangle\obj\Debug\Rectangle.csprojAssemblyReference.cache
+E:\C#\Practice\C# Essential\1. Classes\Task 2\Rectangle\Rectangle\obj\Debug\Rectangle.csproj.CoreCompileInputs.cache
+E:\C#\Practice\C# Essential\1. Classes\Task 2\Rectangle\Rectangle\obj\Debug\Rectangle.exe
+E:\C#\Practice\C# Essential\1. Classes\Task 2\Rectangle\Rectangle\obj\Debug\Rectangle.pdb

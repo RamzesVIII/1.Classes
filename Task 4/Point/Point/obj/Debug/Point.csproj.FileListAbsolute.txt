@@ -1,0 +1,7 @@
+E:\C#\Practice\C# Essential\1. Classes\Task 4\Point\Point\bin\Debug\Point.exe.config
+E:\C#\Practice\C# Essential\1. Classes\Task 4\Point\Point\bin\Debug\Point.exe
+E:\C#\Practice\C# Essential\1. Classes\Task 4\Point\Point\bin\Debug\Point.pdb
+E:\C#\Practice\C# Essential\1. Classes\Task 4\Point\Point\obj\Debug\Point.csprojAssemblyReference.cache
+E:\C#\Practice\C# Essential\1. Classes\Task 4\Point\Point\obj\Debug\Point.csproj.CoreCompileInputs.cache
+E:\C#\Practice\C# Essential\1. Classes\Task 4\Point\Point\obj\Debug\Point.exe
+E:\C#\Practice\C# Essential\1. Classes\Task 4\Point\Point\obj\Debug\Point.pdb
