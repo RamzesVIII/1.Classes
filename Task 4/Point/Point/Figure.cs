@@ -8,68 +8,61 @@ namespace Point
 {
     class Figure
     {
-        double perimeter;
-        string figure;
-        Point A, B, C, D, E;
-        int counter;
+        //Массив точек
+        Point[] NPoint;
 
-        public Figure (Point a, Point b, Point c)
+        //Передаем любое количество точек в качестве аргумента
+        public Figure(params Point[] points)
         {
-
-            this.A = a;
-            this.B = b;
-            this.C = c;
-            figure = "triangle";
-            counter = 3;
+            NPoint = new Point[points.Length];
+            for (int i = 0; i < points.Length; i++)
+            {
+                NPoint[i] = points[i];
+            }
         }
-        public Figure(Point a, Point b, Point c, Point d)
+        
+        //Вычисляем длину прямой между 2-мя точками
+        public double LenghSide(int indexpoint1, int indexpoint2)
         {
-            this.A = a;
-            this.B = b;
-            this.C = c;
-            this.D = d;
-            figure = "quadrangle";
-            counter = 4;
-        }
-        public Figure(Point a, Point b, Point c, Point d, Point e)
-        {
-            this.A = a;
-            this.B = b;
-            this.C = c;
-            this.D = d;
-            this.E = e;
-            figure = "pentagon";
-            counter = 5;
+            return Math.Sqrt((Math.Pow((NPoint[indexpoint2].X - NPoint[indexpoint1].X), 2) + (Math.Pow((NPoint[indexpoint2].Y - NPoint[indexpoint1].Y), 2))));
         }
 
-        private double LengthSide (Point A, Point B)
+        //Вычисляем периметр многоугольника
+        public void PerimeterCalculator()
         {
+            int counter = NPoint.Length;
 
-            return Math.Sqrt(Math.Abs(B.PointA - A.PointA) ^ 2 + Math.Abs(B.PointB - A.PointB) ^ 2);
-        }
-
-        public void PerimeterCalculator ()
-        {
+            double Perimeter = 0;
+            for (int i = 0; i < counter; i++)
+            {
+                int nextpoint = i + 1;
+                if (nextpoint == NPoint.Length)
+                {
+                    nextpoint = 0;
+                }
+                Perimeter += LenghSide(i, nextpoint);
+            }
             if (counter == 3)
             {
-
-                perimeter = LengthSide(A, B) + LengthSide(B, C) + LengthSide(A, C);
-
-                Console.WriteLine( "This figure is {0}, it's perimeter = {1}",figure, perimeter) ;
-                
+                Console.WriteLine("Triangle");
             }
             else if (counter == 4)
             {
-                perimeter = LengthSide(A, B) + LengthSide(B, C) + LengthSide(C, D) + LengthSide(A, D);
-
-                Console.WriteLine("This figure is {0}, it's perimeter = {1}", figure, perimeter);
+                Console.WriteLine("Quadrangle");
             }
             else if (counter == 5)
             {
-                perimeter = LengthSide(A, B) + LengthSide(B, C) + LengthSide(C, D) + LengthSide(D, E) + LengthSide(A, E);
-
-                Console.WriteLine("This figure is {0}, it's perimeter = {1}", figure, perimeter);
+                Console.WriteLine("Pentagon");
             }
+            else
+                Console.WriteLine("poligon");
+
+            Console.WriteLine(Perimeter);
         }
+
     }
+
+
+
+
 }

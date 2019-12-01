@@ -688,23 +688,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\GT63\\.nuget\\packages\\": {},
+    "C:\\Users\\Roman\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\C#\\Programming\\C# practice\\1. Classes\\Task 5\\Address\\Address\\Address.csproj",
+      "projectUniqueName": "e:\\C#\\Practice\\C# Essential\\1.Classes\\Task 5\\Address\\Address\\Address.csproj",
       "projectName": "Address",
-      "projectPath": "D:\\C#\\Programming\\C# practice\\1. Classes\\Task 5\\Address\\Address\\Address.csproj",
-      "packagesPath": "C:\\Users\\GT63\\.nuget\\packages\\",
-      "outputPath": "D:\\C#\\Programming\\C# practice\\1. Classes\\Task 5\\Address\\Address\\obj\\",
+      "projectPath": "e:\\C#\\Practice\\C# Essential\\1.Classes\\Task 5\\Address\\Address\\Address.csproj",
+      "packagesPath": "C:\\Users\\Roman\\.nuget\\packages\\",
+      "outputPath": "e:\\C#\\Practice\\C# Essential\\1.Classes\\Task 5\\Address\\Address\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\GT63\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Roman\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [

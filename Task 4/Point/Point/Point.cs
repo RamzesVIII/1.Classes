@@ -8,21 +8,21 @@ namespace Point
 {
     class Point
     {
-        int pointA;
-        int pointB;
-        string field;
+        private int x;
+        private int y;
+        private string field;
 
-        public int PointA
-        { get { return pointA; } }
-        public int PointB
-        { get { return pointB; } }
-        public string Field
-        { get { return field; } }
+        public int X => x;
 
-        public Point (int pointA, int pointB, string field)
+        public int Y => y;
+
+        public string Field => field;
+        
+
+        public Point (int x, int y, string field)
         {
-            this.pointA = pointA;
-            this.pointB = pointB;
+            this.x = x;
+            this.y = y;
             this.field = field;
         }
     }

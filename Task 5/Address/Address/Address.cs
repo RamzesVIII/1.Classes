@@ -6,8 +6,8 @@ namespace Address
 {
     class Address
     {
-        int index, house, apartment;
-        string country, city, street;
+        private int index, house, apartment;
+        private string country, city, street;
 
         public int Index
         {
@@ -52,7 +52,7 @@ namespace Address
             this.apartment = apartment;
         }
 
-        public void Show ()
+        internal void Show ()
         {
             Console.WriteLine(" Страна - {0} \n Город - {1} \n Улица - {2} \n Дом № - {3} \n " +
                 "Индекс - {4} \n Квартира № - {5}", country, city, street, house, index, apartment);

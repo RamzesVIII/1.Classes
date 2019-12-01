@@ -10,6 +10,7 @@ namespace Point
     {
         static void Main(string[] args)
         {
+            //Создаем экземпляр фигур и вычисляем их периметр
             Figure triangle = new Figure(new Point(1, 3, "A"), new Point(5, 5, "B"), new Point(9, 3, "C"));
             triangle.PerimeterCalculator();
 
