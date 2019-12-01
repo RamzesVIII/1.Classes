@@ -17,9 +17,6 @@ namespace Book
             this.author = new Author(author);
             this.title = new Title(title);
             this.content = new Content(content);
-                     
-
-           
         }
 
         public void ShowAll()

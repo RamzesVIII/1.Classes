@@ -8,28 +8,30 @@ namespace Rectangle
 {
     class Rectangle
     {
-        double side1, side2;
+        private double side1, side2;
 
-        public Rectangle (double side1, double side2)
+        internal Rectangle (double side1, double side2)
         {
             this.side1 = side1;
             this.side2 = side2;
         }
 
-        double AreaCalculator()
+        // Делаем методы privat, т.к. у них есть свойства для чтения
+        private double AreaCalculator()
         {
             return side1 * side2;
         }
 
-        double PerimeterCalculator ()
+        private double PerimeterCalculator ()
         {
             return  (side1 + side2) * 2;
         }
 
-        public double Area
+        //Свойства методов
+        internal double Area
         { get { return AreaCalculator(); } }
 
-        public double Perimeter
+        internal double Perimeter
         { get { return PerimeterCalculator(); } }
 
     }

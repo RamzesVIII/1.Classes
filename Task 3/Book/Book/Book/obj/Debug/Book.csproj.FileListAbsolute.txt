@@ -5,3 +5,10 @@ e:\C#\Practice\C# Essential\1. Classes\Task 3\Book\Book\Book\obj\Debug\Book.cspr
 e:\C#\Practice\C# Essential\1. Classes\Task 3\Book\Book\Book\obj\Debug\Book.csproj.CoreCompileInputs.cache
 e:\C#\Practice\C# Essential\1. Classes\Task 3\Book\Book\Book\obj\Debug\Book.exe
 e:\C#\Practice\C# Essential\1. Classes\Task 3\Book\Book\Book\obj\Debug\Book.pdb
+e:\C#\Practice\C# Essential\1.Classes\Task 3\Book\Book\Book\bin\Debug\Book.exe.config
+e:\C#\Practice\C# Essential\1.Classes\Task 3\Book\Book\Book\bin\Debug\Book.exe
+e:\C#\Practice\C# Essential\1.Classes\Task 3\Book\Book\Book\bin\Debug\Book.pdb
+e:\C#\Practice\C# Essential\1.Classes\Task 3\Book\Book\Book\obj\Debug\Book.csprojAssemblyReference.cache
+e:\C#\Practice\C# Essential\1.Classes\Task 3\Book\Book\Book\obj\Debug\Book.csproj.CoreCompileInputs.cache
+e:\C#\Practice\C# Essential\1.Classes\Task 3\Book\Book\Book\obj\Debug\Book.exe
+e:\C#\Practice\C# Essential\1.Classes\Task 3\Book\Book\Book\obj\Debug\Book.pdb

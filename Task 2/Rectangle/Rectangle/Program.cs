@@ -10,9 +10,10 @@ namespace Rectangle
     {
         static void Main(string[] args)
         {
+            //Создаем экземпляр класса Rectangle и выводим его площадь и периметр
             Rectangle figure = new Rectangle(5, 20);
-            Console.WriteLine(figure.Area);
-            Console.WriteLine(figure.Perimeter);
+            Console.WriteLine("Area = {0}",figure.Area);
+            Console.WriteLine("Perimeter = {0}",figure.Perimeter);
         }
     }
 }

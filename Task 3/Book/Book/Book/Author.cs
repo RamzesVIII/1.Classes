@@ -6,21 +6,17 @@ using System.Threading.Tasks;
 
 namespace Book
 {
-    class Author
-    {
-        string author;
-        string AuthorProperty
-        { get {return author; } set { author = value; } }
-
+    class Author : BaseClass
+    {        
         public Author (string author)
         {
-            this.author = author;
+            field = author;
         }
 
-        public void Show()
+        public override void Show()
         {
             Console.ForegroundColor = ConsoleColor.Magenta;
-            Console.WriteLine(AuthorProperty);
+            Console.WriteLine(FieldProperty);
         }
     }
 }
