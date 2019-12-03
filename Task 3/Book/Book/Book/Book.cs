@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Book
 {
-    class Book
+    public class Book
     {
         readonly Author author;
         readonly Title title;
@@ -21,9 +21,9 @@ namespace Book
 
         public void ShowAll()
         {
-            author.Show();
-            title.Show();
-            content.Show();
+            author.Show(ConsoleColor.Magenta);
+            title.Show(ConsoleColor.Cyan);
+            content.Show(ConsoleColor.Green);
         }
     }
 }

@@ -6,14 +6,17 @@ using System.Threading.Tasks;
 
 namespace Book
 {
-    class BaseClass
+    public class BaseClass
     {
         protected string field;
-        internal string FieldProperty => field;
+        public string FieldProperty => field;
         
-        public virtual void Show ()
+        public void Show (ConsoleColor color)
         {
-            Console.WriteLine(field);
+            
+            Console.ForegroundColor = color;
+            Console.WriteLine(FieldProperty);
+            Console.ForegroundColor = ConsoleColor.White;
         }
     }
 }
