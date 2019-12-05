@@ -8,15 +8,16 @@ namespace Book
 {
     public class BaseClass
     {
-        protected string field;
-        public string FieldProperty => field;
-        
-        public void Show (ConsoleColor color)
+        public string Field { get; set ; }
+        public virtual ConsoleColor FontColor { get; set; }
+
+        public BaseClass(string field)
+        {
+            this.Field = field;
+        }
+        public virtual void Show ()
         {
             
-            Console.ForegroundColor = color;
-            Console.WriteLine(FieldProperty);
-            Console.ForegroundColor = ConsoleColor.White;
         }
     }
 }

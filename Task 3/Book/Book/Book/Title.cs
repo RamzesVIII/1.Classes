@@ -8,10 +8,21 @@ namespace Book
 {
     public class Title : BaseClass
     {
-        public Title(string title)
+        public override ConsoleColor FontColor
         {
-            field = title;
+            get { return ConsoleColor.Cyan; }
+            set { FontColor = value; }
         }
-        
+        public Title(string title) : base (title)
+        {
+            
+        }
+
+        public override void Show()
+        {
+            Console.ForegroundColor = FontColor;
+            Console.WriteLine(Field);
+            Console.ResetColor();
+        }
     }
 }

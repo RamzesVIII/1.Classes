@@ -7,11 +7,23 @@ using System.Threading.Tasks;
 namespace Book
 {
     public class Author : BaseClass
-    {        
-        public Author (string author)
+    {
+        public override ConsoleColor FontColor
         {
-            field = author;
+            get { return ConsoleColor.Magenta; }
+            set { FontColor = value; }
         }
-        
+        public Author (string author) : base (author)
+        {
+            
+        }
+
+        public override void Show() 
+        {   
+            Console.ForegroundColor = FontColor;
+            Console.WriteLine(Field);
+            Console.ResetColor();
+        }
+
     }
 }

@@ -21,9 +21,9 @@ namespace Book
 
         public void ShowAll()
         {
-            author.Show(ConsoleColor.Magenta);
-            title.Show(ConsoleColor.Cyan);
-            content.Show(ConsoleColor.Green);
+            author.Show();
+            title.Show();
+            content.Show();
         }
     }
 }
