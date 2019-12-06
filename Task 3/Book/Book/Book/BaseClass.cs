@@ -9,7 +9,7 @@ namespace Book
     public class BaseClass
     {
         public string Field { get; set ; }
-        public virtual ConsoleColor FontColor { get; set; }
+        public virtual ConsoleColor FontColor { get; }
 
         public BaseClass(string field)
         {
@@ -17,7 +17,9 @@ namespace Book
         }
         public virtual void Show ()
         {
-            
+            Console.ForegroundColor = FontColor;
+            Console.WriteLine(Field);
+            Console.ResetColor();
         }
     }
 }

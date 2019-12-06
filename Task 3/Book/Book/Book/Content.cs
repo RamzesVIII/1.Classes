@@ -8,11 +8,8 @@ namespace Book
 {
     public class Content : BaseClass
     {
-        public override ConsoleColor FontColor 
-        { 
-            get { return ConsoleColor.Green; } 
-            set { FontColor = value; }
-        }
+        public override ConsoleColor FontColor => ConsoleColor.Green;
+        
         public Content(string content) : base (content)
         {
             
@@ -20,9 +17,7 @@ namespace Book
 
         public override void Show()
         {
-            Console.ForegroundColor = FontColor;
-            Console.WriteLine(Field);
-            Console.ResetColor();
+            base.Show();
         }
     }
 }

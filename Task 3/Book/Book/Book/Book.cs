@@ -8,9 +8,9 @@ namespace Book
 {
     public class Book
     {
-        readonly Author author;
-        readonly Title title;
-        readonly Content content;
+        private readonly Author author;
+        private readonly Title title;
+        private readonly Content content;
 
         public Book(string author, string title, string content)
         {
