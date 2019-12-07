@@ -10,13 +10,13 @@ namespace Rectangle
     {
         private double side1, side2;
 
-        internal Rectangle (double side1, double side2)
+        public Rectangle (double side1, double side2)
         {
             this.side1 = side1;
             this.side2 = side2;
         }
 
-        // Делаем методы privat, т.к. у них есть свойства для чтения
+        // Устанавливаем модификатор доступа privat, т.к. у методов есть свойства для чтения
         private double AreaCalculator()
         {
             return side1 * side2;
@@ -28,11 +28,11 @@ namespace Rectangle
         }
 
         //Свойства методов
-        internal double Area
-        { get { return AreaCalculator(); } }
+        internal double Area => AreaCalculator();
 
-        internal double Perimeter
-        { get { return PerimeterCalculator(); } }
+
+        internal double Perimeter => PerimeterCalculator();
+        
 
     }
 }

@@ -14,11 +14,9 @@ namespace Book
         {
             
         }
-
         public override void Show()
         {
             base.Show();
-
         }
     }
 }

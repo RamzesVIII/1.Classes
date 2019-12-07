@@ -9,3 +9,13 @@ D:\C#\Programming\C# practice\1. Classes\Task 5\Address\Address\obj\Debug\netcor
 D:\C#\Programming\C# practice\1. Classes\Task 5\Address\Address\obj\Debug\netcoreapp2.1\Address.AssemblyInfo.cs
 D:\C#\Programming\C# practice\1. Classes\Task 5\Address\Address\obj\Debug\netcoreapp2.1\Address.dll
 D:\C#\Programming\C# practice\1. Classes\Task 5\Address\Address\obj\Debug\netcoreapp2.1\Address.pdb
+d:\C#\Programming\C# practice\1. Classes (book)\1.Classes\Task 5\Address\Address\bin\Debug\netcoreapp2.1\Address.deps.json
+d:\C#\Programming\C# practice\1. Classes (book)\1.Classes\Task 5\Address\Address\bin\Debug\netcoreapp2.1\Address.runtimeconfig.json
+d:\C#\Programming\C# practice\1. Classes (book)\1.Classes\Task 5\Address\Address\bin\Debug\netcoreapp2.1\Address.runtimeconfig.dev.json
+d:\C#\Programming\C# practice\1. Classes (book)\1.Classes\Task 5\Address\Address\bin\Debug\netcoreapp2.1\Address.dll
+d:\C#\Programming\C# practice\1. Classes (book)\1.Classes\Task 5\Address\Address\bin\Debug\netcoreapp2.1\Address.pdb
+d:\C#\Programming\C# practice\1. Classes (book)\1.Classes\Task 5\Address\Address\obj\Debug\netcoreapp2.1\Address.csprojAssemblyReference.cache
+d:\C#\Programming\C# practice\1. Classes (book)\1.Classes\Task 5\Address\Address\obj\Debug\netcoreapp2.1\Address.AssemblyInfoInputs.cache
+d:\C#\Programming\C# practice\1. Classes (book)\1.Classes\Task 5\Address\Address\obj\Debug\netcoreapp2.1\Address.AssemblyInfo.cs
+d:\C#\Programming\C# practice\1. Classes (book)\1.Classes\Task 5\Address\Address\obj\Debug\netcoreapp2.1\Address.dll
+d:\C#\Programming\C# practice\1. Classes (book)\1.Classes\Task 5\Address\Address\obj\Debug\netcoreapp2.1\Address.pdb
