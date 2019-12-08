@@ -6,12 +6,12 @@ using System.Threading.Tasks;
 
 namespace Point
 {
-    class Figure
+    public class Figure
     {
         //Массив точек
         Point[] NPoint;
 
-        //Передаем любое количество точек в качестве аргумента
+        //Передаем произвольное количество точек в качестве аргумента
         public Figure(params Point[] points)
         {
             NPoint = new Point[points.Length];
@@ -30,10 +30,8 @@ namespace Point
         //Вычисляем периметр многоугольника
         public void PerimeterCalculator()
         {
-            int counter = NPoint.Length;
-
             double Perimeter = 0;
-            for (int i = 0; i < counter; i++)
+            for (int i = 0; i < NPoint.Length; i++)
             {
                 int nextpoint = i + 1;
                 if (nextpoint == NPoint.Length)
@@ -42,20 +40,28 @@ namespace Point
                 }
                 Perimeter += LenghSide(i, nextpoint);
             }
-            if (counter == 3)
+
+            Dictionary<int, string> sides = new Dictionary<int, string>();
             {
-                Console.WriteLine("Triangle");
+                sides.Add(3, "Triangle");
+                sides.Add(4, "Quadrangle");
+                sides.Add(5, "Pentagon");
             }
-            else if (counter == 4)
+            string figurename ;
+            foreach (KeyValuePair<int,string> keyValue in sides)
             {
-                Console.WriteLine("Quadrangle");
+                
+                if (sides.TryGetValue(keyValue.Key, out figurename))
+                {
+                    if (keyValue.Key == NPoint.Length)
+                    {
+                        Console.WriteLine(keyValue.Value);
+                    }
+                }
+                else Console.WriteLine("Poligon");
+                
             }
-            else if (counter == 5)
-            {
-                Console.WriteLine("Pentagon");
-            }
-            else
-                Console.WriteLine("poligon");
+          
 
             Console.WriteLine(Perimeter);
         }
