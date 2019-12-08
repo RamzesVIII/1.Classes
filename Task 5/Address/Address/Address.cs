@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Address
 {
-    class Address
+    public class Address
     {   
         public int Index { get; set; }
         
@@ -30,7 +30,7 @@ namespace Address
             Apartment = apartment;
         }
 
-        internal void Show ()
+        public void Show ()
         {
             Console.WriteLine(" Страна - {0} \n Город - {1} \n Улица - {2} \n Дом № - {3} \n " +
                 "Индекс - {4} \n Квартира № - {5}", Country, City, Street, House, Index, Apartment);
