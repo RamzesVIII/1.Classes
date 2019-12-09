@@ -10,7 +10,8 @@ namespace Point
     {
         //Массив точек
         Point[] NPoint;
-
+        private int key;
+        private string figurename;
         //Передаем произвольное количество точек в качестве аргумента
         public Figure(params Point[] points)
         {
@@ -20,7 +21,14 @@ namespace Point
                 NPoint[i] = points[i];
             }
         }
-        
+
+        //private Dictionary<int, string> SideToFigure
+        //{
+        //    get; set;
+            
+            
+        //}
+
         //Вычисляем длину прямой между 2-мя точками
         public double LenghSide(int indexpoint1, int indexpoint2)
         {
@@ -41,31 +49,59 @@ namespace Point
                 Perimeter += LenghSide(i, nextpoint);
             }
 
+            //Dictionary<int, string> sides = new Dictionary<int, string>();
+            //{
+            //    sides.Add(3, "Triangle");
+            //    sides.Add(4, "Quadrangle");
+            //    sides.Add(5, "Pentagon");
+            //}
+
+            //foreach (KeyValuePair<int, string> keyValue in sides)
+            //{
+
+            //    if (sides.Count <= NPoint.Length )
+            //    {
+            //        if (keyValue.Key == NPoint.Length)
+            //        {
+            //            Console.WriteLine(keyValue.Value);
+            //        }
+            //    }
+            //    else Console.WriteLine("Poligon");
+
+            //}
+
+
+            Console.WriteLine(Perimeter);
+            FigureNazivator();
+        }
+        public void FigureNazivator()
+        {
             Dictionary<int, string> sides = new Dictionary<int, string>();
             {
                 sides.Add(3, "Triangle");
                 sides.Add(4, "Quadrangle");
                 sides.Add(5, "Pentagon");
             }
-            string figurename ;
-            foreach (KeyValuePair<int,string> keyValue in sides)
+
+            foreach (KeyValuePair<int, string> keyValue in sides)
             {
-                
-                if (sides.TryGetValue(keyValue.Key, out figurename))
+
+                if (sides.Keys.Contains(NPoint.Length))
                 {
+                    
                     if (keyValue.Key == NPoint.Length)
                     {
                         Console.WriteLine(keyValue.Value);
                     }
                 }
-                else Console.WriteLine("Poligon");
+                else if (!sides.Keys.Contains(NPoint.Length))
+                {
+                    Console.WriteLine("Poligon");
+                    break;
+                }
                 
             }
-          
-
-            Console.WriteLine(Perimeter);
         }
-
     }
 
 

@@ -30,6 +30,12 @@ namespace Point
             Figure poligon = new Figure(new Point(1, 1, "A"), new Point(15, 1, "B"), new Point(12, 8, "C"), new Point(9, 7, "D"),
                 new Point(5, 5, "E"), new Point(1, 2, "F"));
             poligon.PerimeterCalculator();
+
+            Console.WriteLine(new string('-', 50));
+
+            Figure poligon2 = new Figure(new Point(1, 2, "A"), new Point(14, 1, "B"), new Point(10, 8, "C"), new Point(9, 7, "D"),
+                new Point(5, 5, "E"), new Point(1, 2, "F"));
+            poligon2.PerimeterCalculator();
         }
     }
 }
