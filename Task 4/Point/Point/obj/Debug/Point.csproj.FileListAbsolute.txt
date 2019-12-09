@@ -17,3 +17,9 @@ d:\C#\Programming\C# practice\1. Classes (book)\1.Classes\Task 4\Point\Point\bin
 d:\C#\Programming\C# practice\1. Classes (book)\1.Classes\Task 4\Point\Point\obj\Debug\Point.csprojAssemblyReference.cache
 d:\C#\Programming\C# practice\1. Classes (book)\1.Classes\Task 4\Point\Point\obj\Debug\Point.exe
 d:\C#\Programming\C# practice\1. Classes (book)\1.Classes\Task 4\Point\Point\obj\Debug\Point.pdb
+d:\C#\Programming\C# practice\1.Classes\Task 4\Point\Point\bin\Debug\Point.exe.config
+d:\C#\Programming\C# practice\1.Classes\Task 4\Point\Point\bin\Debug\Point.exe
+d:\C#\Programming\C# practice\1.Classes\Task 4\Point\Point\bin\Debug\Point.pdb
+d:\C#\Programming\C# practice\1.Classes\Task 4\Point\Point\obj\Debug\Point.csprojAssemblyReference.cache
+d:\C#\Programming\C# practice\1.Classes\Task 4\Point\Point\obj\Debug\Point.exe
+d:\C#\Programming\C# practice\1.Classes\Task 4\Point\Point\obj\Debug\Point.pdb
