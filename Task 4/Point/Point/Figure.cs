@@ -21,7 +21,12 @@ namespace Point
             }
         }
         //Автосвойство словаря
-        private Dictionary<int, string> Sides { get; set; } = new Dictionary<int, string>();
+        private readonly Dictionary<int, string> _sides = new Dictionary<int, string>()
+        {
+            {3, "Triangle" },
+            {4, "Quadrangle" },
+            {5, "Pentagon" }
+        };
 
         //Вычисляем длину прямой между 2-мя точками
         public double LenghSide(int indexpoint1, int indexpoint2)
@@ -42,35 +47,19 @@ namespace Point
                 }
                 Perimeter += LenghSide(i, nextpoint);
             }
-            
             Console.WriteLine(Perimeter);
             FigureNazivator();
         }
         //Метод, который подписывает получившиеся фигуры
         public void FigureNazivator()
         {
-            Sides.Add(3, "Triangle");
-            Sides.Add(4, "Quadrangle");
-            Sides.Add(5, "Pentagon");
-
-            foreach (KeyValuePair<int, string> keyValue in Sides)
+            string resault;
+            _sides.TryGetValue(NPoint.Length, out resault);
+            if (resault == null)
             {
-
-                if (Sides.Keys.Contains(NPoint.Length))
-                {
-                    
-                    if (keyValue.Key == NPoint.Length)
-                    {
-                        Console.WriteLine(keyValue.Value);
-                    }
-                }
-                else if (!Sides.Keys.Contains(NPoint.Length))
-                {
-                    Console.WriteLine("Poligon");
-                    break;
-                }
-                
+                Console.Write("Poligon");
             }
+            Console.WriteLine(resault);
         }
     }
 
