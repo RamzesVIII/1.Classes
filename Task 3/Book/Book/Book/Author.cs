@@ -15,6 +15,7 @@ namespace Book
         {
             
         }
+        //public Author() { }
         //Переопределяем метод базового класса
         public override void Show() 
         {

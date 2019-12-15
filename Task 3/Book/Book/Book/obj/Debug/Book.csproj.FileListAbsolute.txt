@@ -18,3 +18,9 @@ d:\C#\Programming\C# practice\1. Classes (book)\1.Classes\Task 3\Book\Book\Book\
 d:\C#\Programming\C# practice\1. Classes (book)\1.Classes\Task 3\Book\Book\Book\bin\Debug\Book.exe.config
 d:\C#\Programming\C# practice\1. Classes (book)\1.Classes\Task 3\Book\Book\Book\bin\Debug\Book.exe
 d:\C#\Programming\C# practice\1. Classes (book)\1.Classes\Task 3\Book\Book\Book\bin\Debug\Book.pdb
+d:\C#\Programming\C# practice\1.Classes\Task 3\Book\Book\Book\bin\Debug\Book.exe.config
+d:\C#\Programming\C# practice\1.Classes\Task 3\Book\Book\Book\bin\Debug\Book.exe
+d:\C#\Programming\C# practice\1.Classes\Task 3\Book\Book\Book\bin\Debug\Book.pdb
+d:\C#\Programming\C# practice\1.Classes\Task 3\Book\Book\Book\obj\Debug\Book.csprojAssemblyReference.cache
+d:\C#\Programming\C# practice\1.Classes\Task 3\Book\Book\Book\obj\Debug\Book.exe
+d:\C#\Programming\C# practice\1.Classes\Task 3\Book\Book\Book\obj\Debug\Book.pdb

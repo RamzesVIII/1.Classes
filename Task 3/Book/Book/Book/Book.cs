@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Book
 {
-    public class Book
+    public class Book /*: ICheta*/
     {
         //Создаем 3 закрытых поля только для чтения
         private readonly Author author;
@@ -27,6 +27,28 @@ namespace Book
             author.Show();
             title.Show();
             content.Show();
+        }
+
+
+
+        //public bool LetPlay(BaseClass item)
+        //{
+
+        //        return item as Author !=null;
+        //}
+        public bool LetPlayDangerous(ICheta item)
+        {
+            try
+            {
+                var au2 = (Author)item;
+                Console.WriteLine("true");
+                return true;
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine("false");
+                return false;
+            }
         }
     }
 }

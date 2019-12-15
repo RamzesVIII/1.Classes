@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Book
 {
-    public class BaseClass
+    public class BaseClass : ICheta
     {   
         public string Field { get; set ; }
         //Виртуальное автосвойство цвета шрифта
@@ -22,6 +22,20 @@ namespace Book
             Console.ForegroundColor = FontColor;
             Console.WriteLine(Field);
             Console.ResetColor();
+        }
+        public virtual bool LetPlayDangerous(ICheta item)
+        {
+            try
+            {
+                var au2 = (Author)item;
+                Console.WriteLine("true");
+                return true;
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine("false");
+                return false;
+            }
         }
     }
 }
