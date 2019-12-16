@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Book
 {
-    public class BaseClass : ICheta
+    public class BaseClass : ICheta, IShow
     {   
         public string Field { get; set ; }
         //Виртуальное автосвойство цвета шрифта

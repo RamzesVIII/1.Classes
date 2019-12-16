@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Book
 {
-    public class Book /*: ICheta*/
+    public class Book : IShowAll
     {
         //Создаем 3 закрытых поля только для чтения
         private readonly Author author;

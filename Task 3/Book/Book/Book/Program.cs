@@ -10,6 +10,16 @@ namespace Book
     {
         bool LetPlayDangerous(ICheta cheta);
     }
+
+    public interface IShow
+    {
+        void Show();
+    }
+
+    public interface IShowAll
+    {
+        void ShowAll();
+    }
     public class Program
     {
         static void Main(string[] args)
@@ -17,7 +27,14 @@ namespace Book
             Book firstbook = new Book("Pushkin", "Farytales", "for kids");
 
             firstbook.ShowAll();
-            
+            Console.WriteLine(new string ('-', 20));
+            Author Gogol = new Author("Gogol");
+            IShow authorr = Gogol as IShow;
+            authorr.Show();
+            Console.WriteLine(new string('-', 20));
+            IShowAll showAll = firstbook as IShowAll;
+            showAll.ShowAll();
+            Console.WriteLine(new string('-', 20));
 
             ICheta [] arr = new ICheta[5];
             arr[0] = new Author("bb");
